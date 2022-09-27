@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  FWD_AWS_BUCKET: test-701936081400-dev
+  FWD_AWS_PROFILE: default
+  FWD_AWS_REGION: us-east-1
+  FWD_JWT_SECRET: helloworld
+  FWD_POSTGRES_DB: crd
+  FWD_POSTGRES_HOST: database-1.csiodtb2egzp.us-east-1.rds.amazonaws.com
+  FWD_URL: ac8e92cad70904eacbfc18c1135a39cd-1014182376.us-east-1.elb.amazonaws.com 
+metadata:
+  name: env-config
