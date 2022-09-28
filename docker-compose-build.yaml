@@ -1,0 +1,18 @@
+version: "3"
+services:
+  reverseproxy:
+    build:
+      context: ./udagram-reverseproxy/Docker
+    image: mowafy-reverseproxy 
+  backend_user:
+    build:
+      context: ./udagram-api-user
+    image: mowafy-rest-api-user
+  backend_feed:
+    build:
+      context: ./udagram-api-feed  
+    image: mowafy-rest-api-feed
+  frontend:
+    build:
+      context: ./udagram-frontend 
+    image: mowafy-udacity-frontend
